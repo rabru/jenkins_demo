@@ -1,4 +1,4 @@
-import glob
+import os
 
 bigipaddr = "10.1.1.4"
 
