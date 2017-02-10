@@ -1,3 +1,4 @@
 import glob
 
-glob.glob('./*.json')
+for f in glob.glob('./*.json')
+    print f
