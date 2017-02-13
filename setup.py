@@ -1,6 +1,6 @@
 from setuptools import setup
 
-setup(name='jenkins_demo',
+setup(name='scripts',
       version='0.1',
       description='',
       url='',
