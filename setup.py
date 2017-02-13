@@ -7,7 +7,7 @@ setup(name='scripts',
       author='Pier-Luc Charbonneau',
       author_email='Pier-Luc Charbonneau',
       license='Apache License, Version 2.0',
-      packages=['jenkins_demo'],
+      packages=['scripts'],
       install_requires=[
           'json',
           'argparse',
