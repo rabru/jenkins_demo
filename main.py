@@ -15,4 +15,5 @@ for line in p.splitlines():
     parse = line.split( )
     if parse:
         if parse.pop(0) is "M":
+            if parse[0].endswith(".json.deploy")
             os.system("./scripts/deploy_iapp_bigip.py -r " + bigipaddr + " " + parse[0])
