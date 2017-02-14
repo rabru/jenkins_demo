@@ -10,7 +10,8 @@ print("List of services to Add/Modify/Remove")
 for line in p.splitlines():
     parse = line.split("\t")
     if len(parse) >= 2:
-        print(parse)
+        if parse[1].endswith(".json.deploy"):
+            print(parse)
 
 for line in p.splitlines():
     if len(parse) >= 2:
