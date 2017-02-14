@@ -8,7 +8,7 @@ p = check_output(["git", "log", "--name-status", "-1"])
 
 for line in p.splitlines():
     parse = line.split("\t")
-    print(List of services to Add/Modify/Remove)
+    print("List of services to Add/Modify/Remove")
     if len(parse) >= 2:
         print(parse)
 
