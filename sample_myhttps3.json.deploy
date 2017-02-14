@@ -2,7 +2,7 @@
 	"name":"my_https_sample2",
 	"parent":"sample_https.json",
 	"strings":[
-                { "pool__addr":"172.16.0.236" },
+                { "pool__addr":"172.16.0.237" },
 		{ "vs__ProfileClientProtocol":"create:type=tcp;nagle=disabled;defaults-from=/Common/tcp-wan-optimized" },
                 { "vs__ProfileClientSSLCert":"/Common/default.crt" },
                 { "vs__ProfileClientSSLKey":"/Common/default.key" }
