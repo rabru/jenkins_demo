@@ -12,4 +12,4 @@ cmd = "git log --name-status -1"
 p = check_output(["git", "log", "--name-status", "-1"])
 
 for line in p.splitlines():
-    print l
+    print line
