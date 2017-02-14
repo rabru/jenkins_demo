@@ -12,4 +12,6 @@ cmd = "git log --name-status -1"
 p = check_output(["git", "log", "--name-status", "-1"])
 
 for line in p.splitlines():
-    print line
+    parse = line.split( )
+    if parse[0] is "m":
+        print(line)
