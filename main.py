@@ -12,10 +12,10 @@ cmd = "git log --name-status -1"
 p = check_output(["git", "log", "--name-status", "-1"])
 
 for line in p.splitlines():
-    parse = line.split( )
+    parse = line.split("\t")
     if parse:
-        if parse[1].endswith(".json.deploy"):
-            if parse[0] is "M":
+        if parse[0].endswith(".json.deploy"):
+            if parse[0].startswith("M"):
                 os.system("./scripts/deploy_iapp_bigip.py -r " + bigipaddr + " " + parse[1])
-            if parse[0] is "A":
+            if parse[0].startswith("A"):
                 os.system("./scripts/deploy_iapp_bigip.py " + bigipaddr + " " + parse[1])
