@@ -3,9 +3,12 @@ import glob
 
 bigipaddr = "10.1.1.4"
 
-for f in glob.glob('./*.json.deploy'):
-    print f
-    os.system("./scripts/deploy_iapp_bigip.py -r " + bigipaddr + " " + f)
+#for f in glob.glob('./*.json.deploy'):
+#    print f
+#    os.system("./scripts/deploy_iapp_bigip.py -r " + bigipaddr + " " + f)
 
-for l in os.system("git log --name-status -1"):
+cmd = "git log --name-status -1"
+p = subprocess.Popen(cmd, stdout=PIPE)
+
+for line in p.stdout:
     print l
