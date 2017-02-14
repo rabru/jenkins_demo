@@ -11,6 +11,10 @@ for line in p.splitlines():
     print(List of services to Add/Modify/Remove)
     if len(parse) >= 2:
         print(parse)
+
+for line in p.splitlines():
+    if len(parse) >= 2:
+        print(parse)
         if parse[1].endswith(".json.deploy"):
             if parse[0] == "M":
                 os.system("./scripts/deploy_iapp_bigip.py -r " + bigipaddr + " " + parse[1])
