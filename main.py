@@ -15,7 +15,7 @@ for line in p.splitlines():
     parse = line.split("\t")
     if parse:
         print(parse)
-        if parse[0].endswith(".json.deploy"):
+        if parse[1].endswith(".json.deploy"):
             if parse[0].startswith("M"):
                 os.system("./scripts/deploy_iapp_bigip.py -r " + bigipaddr + " " + parse[1])
             if parse[0].startswith("A"):
