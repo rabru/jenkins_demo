@@ -18,5 +18,7 @@ for line in p.splitlines():
         if parse[1].endswith(".json.deploy"):
             if parse[0] == "M":
                 os.system("./scripts/deploy_iapp_bigip.py -r " + bigipaddr + " " + parse[1])
-            if parse[0].startswith("A"):
+            if parse[0] == "A":
                 os.system("./scripts/deploy_iapp_bigip.py " + bigipaddr + " " + parse[1])
+            if parse[0] == "A":
+                #os.system("./scripts/deploy_iapp_bigip.py " + bigipaddr + " " + parse[1])
