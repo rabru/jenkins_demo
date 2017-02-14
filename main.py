@@ -12,7 +12,7 @@ cmd = "git log --name-status -1"
 p = check_output(["git", "log", "--name-status", "-1"])
 
 for line in p.splitlines():
-    parse = line.split(" ")
+    parse = line.split("\t")
     if parse:
         print(parse)
         if parse[0].endswith(".json.deploy"):
