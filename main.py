@@ -20,5 +20,5 @@ for line in p.splitlines():
                 os.system("./scripts/deploy_iapp_bigip.py -r " + bigipaddr + " " + parse[1])
             if parse[0] == "A":
                 os.system("./scripts/deploy_iapp_bigip.py " + bigipaddr + " " + parse[1])
-            if parse[0] == "A":
-                #os.system("./scripts/deploy_iapp_bigip.py " + bigipaddr + " " + parse[1])
+            if parse[0] == "D":
+                os.system("./scripts/delete_iapp_bigip.py " + bigipaddr + " " + parse[1].split(".")[0])
