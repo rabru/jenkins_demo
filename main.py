@@ -1,3 +1,8 @@
+# This script is called by Jenkins and checks what changes were made during the last git commit and will then deploy,
+# redeploy or delete an iApp. The file to be deployed/redeployed needs to end with .json.deploy. For the delete
+# to work you need to make sure the name in the json.deploy file (for example "name":"my_https_sample2") is the same
+# as the name of the file (For example my_https_sample2.json.deploy)
+
 import os
 import glob
 from subprocess import check_output
