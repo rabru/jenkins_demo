@@ -1,3 +1,6 @@
+# This script will go through all the .json.deploy files and redeploy them (overwrite changes if they are already
+# deployed or create a new iapp deployement if they are not deployed)
+
 import os
 import glob
 from subprocess import check_output
