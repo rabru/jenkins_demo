@@ -1,5 +1,5 @@
 {
-	"name":"my_https_sample2",
+	"name":"my_https_sample3",
 	"parent":"sample_https.json",
 	"strings":[
                 { "pool__addr":"172.16.0.237" },
