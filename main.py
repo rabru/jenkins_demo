@@ -13,6 +13,7 @@ p = check_output(["git", "log", "--name-status", "-1"])
 
 for line in p.splitlines():
     parse = line.split( )
-    print(parse.pop(0))
+    if parse:
+        print(parse.pop(0))
 #    if parse.index[self,0] is "m":
 #        print(line)
