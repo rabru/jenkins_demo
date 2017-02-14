@@ -8,6 +8,7 @@ p = check_output(["git", "log", "--name-status", "-1"])
 
 for line in p.splitlines():
     parse = line.split("\t")
+    print(List of services to Add/Modify/Remove)
     if len(parse) >= 2:
         print(parse)
         if parse[1].endswith(".json.deploy"):
@@ -16,5 +17,4 @@ for line in p.splitlines():
             if parse[0] == "A":
                 os.system("./scripts/deploy_iapp_bigip.py " + bigipaddr + " " + parse[1])
             if parse[0] == "D":
-                print("./scripts/delete_iapp_bigip.py " + bigipaddr + " " + "-n" + " " + parse[1].split(".")[0])
                 os.system("./scripts/delete_iapp_bigip.py " + bigipaddr + " " + "-n" + " " + parse[1].split(".")[0])
