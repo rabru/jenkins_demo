@@ -14,5 +14,5 @@ p = check_output(["git", "log", "--name-status", "-1"])
 for line in p.splitlines():
     parse = line.split( )
     if parse:
-        if parse.index[self,0] is "M":
+        if parse.pop(0) is "M":
             print(line)
