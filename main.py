@@ -15,5 +15,5 @@ for line in p.splitlines():
     parse = line.split( )
     if parse:
         if parse.pop(0) is "M":
-            print(parse.pop(1))
+            print(parse.[1])
             #os.system("./scripts/deploy_iapp_bigip.py -r " + bigipaddr + " " + parse.pop())
