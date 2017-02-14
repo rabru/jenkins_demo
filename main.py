@@ -13,7 +13,7 @@ p = check_output(["git", "log", "--name-status", "-1"])
 
 for line in p.splitlines():
     parse = line.split("\t")
-    if parse[1] != None:
+    if len(parse) >= 1:
         print(parse)
         if parse[1].endswith(".json.deploy"):
             if parse[0].startswith("M"):
