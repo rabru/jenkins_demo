@@ -34,16 +34,14 @@
 			"name":"pool__Members",
       	"columnNames": [ "Index", "IPAddress", "Port", "ConnectionLimit", "Ratio", "PriorityGroup", "State", "AdvOptions" ],
          "rows" : [
-            { "row": [ "0", "1.1.1.1", "80", "0", "1", "0", "enabled",  "none"] },
-            { "row": [ "0", "2.2.2.2", "80", "0", "1", "0", "disabled", "none"] },
-            { "row": [ "0", "3.3.3.3", "80", "0", "1", "0", "drain-disabled", "none"] }
+            { "row": [ "0", "1.1.1.1", "80", "0", "1", "0", "enabled",  "none"] }
          ]
 		},
       {
          "name":"vs__BundledItems",
          "columnNames": ["Resource"],
          "rows" : [
-            { "row": [ "irule:maintenancePage" ] }
+            { "row": [ "irule:url=http://10.1.1.25/maintenancePage.irule" ] }
          ]
       }
 	]
