@@ -41,7 +41,7 @@
          "name":"vs__BundledItems",
          "columnNames": ["Resource"],
          "rows" : [
-            { "row": [ "irule:url=http://10.1.1.25/maintenancePage.irule" ] }
+            { "row": [ "irule:urloptional=http://10.1.1.25/maintenancePage.irule" ] }
          ]
       }
 	]
