@@ -16,9 +16,9 @@
       { "vs__ProfileFallbackPersist":"/Common/source_addr" },
       { "vs__ProfileServerSSL":"create:handshake-timeout=30;defaults-from=/Common/serverssl" },
       { "vs__ProfileClientSSL":"" },
-      { "vs__ProfileClientSSLCert":"url=https://raw.githubusercontent.com/plcharbonneau/jenkins_demo/master/certs/f5demo.crt" },
-      { "vs__ProfileClientSSLKey":"url=https://raw.githubusercontent.com/plcharbonneau/jenkins_demo/master/certs/f5demo.key" },
-      { "vs__ProfileClientSSLChain":"url=https://raw.githubusercontent.com/plcharbonneau/jenkins_demo/master/certs/ca-bundle.crt" },
+      { "vs__ProfileClientSSLCert":"url=http://localhost/f5demo.crt" },
+      { "vs__ProfileClientSSLKey":"url=http://localhost/f5demo.key" },
+      { "vs__ProfileClientSSLChain":"url=http://localhost/ca-bundle.crt" },
       { "vs__ProfileClientSSLCipherString":"DEFAULT" },
       { "vs__ProfileClientSSLAdvOptions":"handshake-timeout=60;strict-resume=enabled" }
 	],
