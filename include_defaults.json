@@ -1,5 +1,7 @@
 {
 	"template_name":"latest",
+	"username":"admin",
+	"password":"admin",
 	"inheritedDevicegroup": "true",
     "deviceGroup": "none",
     "inheritedTrafficGroup": "true",
