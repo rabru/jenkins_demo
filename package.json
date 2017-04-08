@@ -1,0 +1,24 @@
+{
+  "name": "jenkins_demo",
+  "version": "1.0.0",
+  "description": "Scripts and demo framework to demonstrate F5 integration with Jenkins",
+  "main": "config.js",
+  "directories": {
+    "example": "examples"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/plcharbonneau/jenkins_demo.git"
+  },
+  "author": "Pier-Luc Charbonneau",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/plcharbonneau/jenkins_demo/issues"
+  },
+  "homepage": "https://github.com/plcharbonneau/jenkins_demo#readme"
+}
