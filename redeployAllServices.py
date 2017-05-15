@@ -5,7 +5,7 @@ import os
 import glob
 from subprocess import check_output
 
-bigipaddr = "10.1.1.4"
+bigipaddr = "10.10.10.12"
 
 for f in glob.glob('./*.json.deploy'):
     print f
