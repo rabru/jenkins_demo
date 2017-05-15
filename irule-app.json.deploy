@@ -3,7 +3,7 @@
 	"parent":"include_defaults.json",
 	"strings":[
 		{ "pool__addr":"6.6.6.6" },
-		{ "pool__port":"80" },
+		{ "pool__port":"81" },
 		{ "pool__DefaultPoolIndex":"0" },
       { "vs__Name":"test_vs_standard_http_bundle_irule_vs" },
       { "vs__Description":"Standard HTTP Virtual Server with Bundled iRules" },
