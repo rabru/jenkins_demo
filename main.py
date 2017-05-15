@@ -7,7 +7,7 @@ import os
 import glob
 from subprocess import check_output
 
-bigipaddr = "10.1.1.4"
+bigipaddr = "10.10.86.12"
 
 p = check_output(["git", "log", "--name-status", "-1"])
 
